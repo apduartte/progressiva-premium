@@ -178,4 +178,8 @@ footer {
   font-size: 0.9rem;
   background: #111;
   color: #ccc;
+  
+}
+body {
+  background: red !important;
 }
