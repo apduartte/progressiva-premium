@@ -5,177 +5,110 @@
 }
 
 body {
-  background: #f4efe9;
   font-family: 'Montserrat', sans-serif;
-  color: #1b1b1b;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 100px 20px;
-  text-align: center;
+  color: #111;
 }
 
 /* HERO */
 
 .hero {
-  position: relative;
-  height: 100vh;
-  background: url('../images/hero-fashion.webp') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
-}
-
-.hero-content {
-  position: relative;
+  background: #000;
+  color: #fff;
+  padding: 120px 10%;
   text-align: center;
-  max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  font-weight: 800;
-}
-
-.hero h2 {
-  font-size: 1.1rem;
-  margin: 20px 0;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-
-.hero-highlight {
-  font-size: 1.3rem;
-  margin: 20px 0;
-}
-
-.location {
-  margin-bottom: 30px;
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-/* BOTÃO DOURADO */
-
-.btn-gold {
-  background: #b48a64;
-  color: white;
-  padding: 16px 36px;
-  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
   font-weight: 600;
-  letter-spacing: 1px;
-  transition: .3s ease;
+  margin-bottom: 25px;
+  line-height: 1.2;
 }
 
-.btn-gold:hover {
-  background: #9f7755;
-  transform: translateY(-3px);
+.subheadline {
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  opacity: 0.9;
 }
 
-/* MANIFESTO */
-
-.manifesto {
-  background: #fff;
+.local {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
-.manifesto h2 {
-  font-size: 2.5rem;
+/* BOTÃO WHATSAPP */
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+.btn-whatsapp.grande {
+  font-size: 18px;
+  padding: 22px 60px;
+}
+
+/* SEÇÕES */
+
+.explicacao,
+.beneficios {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.explicacao p {
   margin-bottom: 20px;
-}
-
-.manifesto p {
-  margin: 10px 0;
-}
-
-/* TRANSFORMAÇÕES */
-
-.transformations h2 {
-  font-size: 2.3rem;
-}
-
-.subtitle {
-  margin-top: 10px;
-  margin-bottom: 40px;
   font-weight: 300;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
-  transition: .5s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* EXCLUSIVE */
-
-.exclusive {
-  background: #ffffff;
-}
-
-.exclusive ul {
-  list-style: none;
-  margin-top: 30px;
-}
-
-.exclusive li {
-  margin: 15px 0;
+.destaque {
   font-weight: 500;
+}
+
+.beneficios ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.beneficios li {
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 /* CTA FINAL */
 
 .cta-final {
-  background: #1b1b1b;
-  color: white;
-}
-
-.btn-outline {
-  display: inline-block;
-  margin-top: 20px;
-  border: 2px solid #b48a64;
-  padding: 14px 30px;
-  color: #b48a64;
-  text-decoration: none;
-  transition: .3s;
-}
-
-.btn-outline:hover {
-  background: #b48a64;
-  color: white;
-}
-
-/* FOOTER */
-
-footer {
-  padding: 40px;
+  padding: 120px 10%;
   text-align: center;
-  font-size: 0.9rem;
-  background: #111;
-  color: #ccc;
+  background: #f2f2f2;
+}
+
+.cta-final h2 {
+  margin-bottom: 40px;
 }
