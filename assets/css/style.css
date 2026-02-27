@@ -1,197 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ================================
+   HERO IMAGE
+================================ */
 
-body {
-  background: #f4efe9;
-  font-family: 'Montserrat', sans-serif;
-  color: #1b1b1b;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-/* HERO */
-
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('../images/hero-fashion.webp') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(244,239,233,0.98) 0%,
-    rgba(244,239,233,0.92) 40%,
-    rgba(244,239,233,0.4) 70%,
-    rgba(0,0,0,0) 100%
-  );
-}
-
-.hero-content {
-  position: relative;
-  text-align: center;
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  line-height: 1.1;
-}
-
-.hero h2 {
-  font-size: 1.2rem;
-  letter-spacing: 4px;
-  margin: 25px 0;
-  font-weight: 400;
-}
-
-.hero-highlight {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin: 20px 0;
-}
-
-.hero-highlight strong {
-  font-weight: 600;
-}
-
-.location {
-  margin-bottom: 30px;
-  font-size: 0.9rem;
-  opacity: 0.85;
-}
-
-/* BOTÃO DOURADO */
-
-.btn-gold {
-  background: linear-gradient(135deg, #d6b37c, #b48a64);
-  color: white;
-  padding: 18px 40px;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  transition: all .4s ease;
-  box-shadow: 0 10px 25px rgba(180,138,100,0.4);
-}
-
-.btn-gold:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(180,138,100,0.6);
-}
-
-/* MANIFESTO */
-
-.manifesto {
-  background: #fff;
-}
-
-.manifesto h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.manifesto p {
-  margin: 10px 0;
-}
-
-/* TRANSFORMAÇÕES */
-
-.transformations h2 {
-  font-size: 2.3rem;
-}
-
-.subtitle {
-  margin-top: 10px;
+.hero-image-wrapper {
   margin-bottom: 40px;
-  font-weight: 300;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.gallery img {
+.hero-image {
   width: 100%;
+  max-width: 700px;
   border-radius: 12px;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
-  transition: .5s ease;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
+/* ================================
+   BEFORE & AFTER
+================================ */
 
-/* EXCLUSIVE */
-
-.exclusive {
-  background: #ffffff;
-}
-
-.exclusive ul {
-  list-style: none;
-  margin-top: 30px;
-}
-
-.exclusive li {
-  margin: 15px 0;
-  font-weight: 500;
-}
-
-/* CTA FINAL */
-
-.cta-final {
-  background: #1b1b1b;
-  color: white;
-}
-
-.btn-outline {
-  display: inline-block;
-  margin-top: 20px;
-  border: 2px solid #b48a64;
-  padding: 14px 30px;
-  color: #b48a64;
-  text-decoration: none;
-  transition: .3s;
-}
-
-.btn-outline:hover {
-  background: #b48a64;
-  color: white;
-}
-
-/* FOOTER */
-
-footer {
-  padding: 40px;
+.before-after {
+  padding: 120px 0;
   text-align: center;
-  font-size: 0.9rem;
   background: #111;
-  color: #ccc;
-  
+}
+
+.before-after h2 {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+  margin-bottom: 60px;
+}
+
+.before-after-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  max-width: 350px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.03);
+}
+
+.image-box p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 768px) {
+
+  .before-after-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
